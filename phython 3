@@ -1,0 +1,26 @@
+a = input()
+b = input()
+f=0
+if(len(a)<len(b)):
+    pass
+elif(len(a)>len(b)):
+    a,b = (b,a)
+else:
+    if(a==b):
+        f=1
+        print(1)
+    else:
+        f=1
+        print(0)
+        
+n=len(a)
+c=0
+for i in range(len(b)-n+1):
+    if(a[0]==b[i]):
+        if(a==b[i:i+n]):
+            c+=1
+    else:
+        pass
+
+if(f==0):
+    print(c)
